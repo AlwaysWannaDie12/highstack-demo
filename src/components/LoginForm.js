@@ -11,7 +11,8 @@ const LogInForm = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);   
     justify-content: center;
-    height: 50%;
+    width: 20rem;
+    height: 25rem;
     background-color: #101010;
     padding: 30px;
     color: white;
@@ -22,8 +23,8 @@ const LogInForm = styled.div`
 
     form{
         display: grid;
-        grid-template-rows: 50px 30px 30px;
-        grid-row-gap: 20px;
+        grid-template-rows: 50px 30px 30px 30p;
+        grid-row-gap: 30px;
     }
 
     input{

@@ -8,8 +8,13 @@ import {
 import { useState } from "react";
 import LoginForm from "./components/LoginForm";
 import styled from "styled-components";
+import TopQuestions from "./components/TopQuestions";
 
-
+const WorkArea = styled.div`
+  padding: 50px 100px;
+  display: grid;
+  grid-row-gap: 20px;
+`;
 
 
 function App() {
@@ -56,6 +61,13 @@ function App() {
         <Header action={() => setButtonPopup(!buttonPopup)} nav=""/>
       ) }
 
+      <WorkArea>
+        <TopQuestions/>
+        <TopQuestions/>
+        <TopQuestions/>
+        <TopQuestions/>
+      </WorkArea>
+      
       <LoginForm trigger = {buttonPopup} action={() => setButtonPopup(!buttonPopup)} Login={Login} error={error}/>
     </div>
   );

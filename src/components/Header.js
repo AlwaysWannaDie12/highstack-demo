@@ -7,10 +7,12 @@ const NavBar = styled.header`
   background-color: #393939;
   box-shadow: 0 3px 3px rgba(0,0,0,0.3);
   display: grid;
-  grid-template-columns: 200px 1fr 70px;
+  grid-template-columns: 10rem 1fr 5rem;
   grid-column-gap: 20px;
+  position: fixed;
   padding: 10px;
   color: #fff;
+  width: 100%;
 `;
 
 function Header(props) {
@@ -19,9 +21,9 @@ function Header(props) {
       <Logo/>
       <SearchBar />
       {(props.nav != "") ? (
-        <span>{props.nav}</span>
+        <ProfileOptions nav={props.nav}/>
       ) : (
-        <ProfileOptions action={props.action}/>
+        <ProfileOptions action={props.action} nav=""/>
       )}
     </NavBar>
   );
