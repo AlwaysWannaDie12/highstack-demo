@@ -64,6 +64,7 @@ function LoginForm(props) {
         <LogInForm>
             <form>
                 LogIn
+                {(props.error!= "") ? (<div>Error</div>) : ""}
                 <input placeholder="Ldap" type="text" id="ldap" onChange={e => setDetails({...details, ldap: e.target.value})} value={details.ldap}></input>
                 <input placeholder="Password" type="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}></input>
                 <button onClick={submitHandler}>Log In</button>

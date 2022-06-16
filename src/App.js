@@ -43,6 +43,7 @@ function App() {
     }
     else{
       console.log("Incorrect Details");
+      setError("Incorrect Details");
     }
   }
 
