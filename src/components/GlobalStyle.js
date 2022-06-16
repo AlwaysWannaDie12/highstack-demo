@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     margin: 0;
     padding: 0;
-    background: #202020;
+    background: #2C394B;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 `;

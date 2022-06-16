@@ -6,7 +6,7 @@ const Title = styled.div`
 
 function QuestionTitle() {
   return (
-    <Title><h3>java problems I face everyday</h3></Title>
+    <Title><h3>Java problems I face everyday</h3></Title>
   )
 }
 

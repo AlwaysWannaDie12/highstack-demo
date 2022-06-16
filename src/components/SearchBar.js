@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Search = styled.input`
     padding: 5px;
     border-radius: 10px;
-    background-color: #202020;
+    background-color: #082032;
     color: #fff;
 `;
 

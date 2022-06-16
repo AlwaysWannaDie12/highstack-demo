@@ -4,7 +4,7 @@ import QuestionTitle from "./QuestionTitle";
 
 const QuestionLine = styled.div`
     width: 100%;
-    background-color: #202020;
+    background-color: #334756;
     padding: 10px;
     display: grid;
     grid-column-gap: 100px;

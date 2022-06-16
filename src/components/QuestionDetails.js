@@ -9,11 +9,11 @@ const StatRow = styled.div`
 
 const Stat = styled.div`
     justify-items: center;
-    background-color: #505050;
+    background-color: #FF4C29;
     padding: 5px;
     font-size: 12px;
     display: grid;
-    grid-row-gap: 5px;
+    grid-row-gap: 0px;
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
