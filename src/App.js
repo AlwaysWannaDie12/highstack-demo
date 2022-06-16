@@ -64,9 +64,6 @@ function App() {
 
       <WorkArea>
         <TopQuestions/>
-        <TopQuestions/>
-        <TopQuestions/>
-        <TopQuestions/>
       </WorkArea>
       
       <LoginForm trigger = {buttonPopup} action={() => setButtonPopup(!buttonPopup)} Login={Login} error={error}/>

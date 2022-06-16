@@ -8,6 +8,8 @@ const QuestionPanel = styled.div`
     padding: 50px;
     border-radius: 10px;
     margin-top: 50px;
+    display: grid;
+    grid-row-gap: 30px;
     
 `;
 
@@ -15,6 +17,10 @@ function TopQuestions() {
   return (
     <QuestionPanel>
         <h2>Top Questions:</h2>
+        <Question/>
+        <Question/>
+        <Question/>
+        <Question/>
         <Question/>
     </QuestionPanel>
   )
