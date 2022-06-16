@@ -22,7 +22,7 @@ function App() {
 
   const adminUser = {
     ldap: "srenjoy.saha",
-    password: "test123"
+    password: "test1234"
   }
 
   const [user, setUser] = useState({ldap: "", name: "", password: ""});
