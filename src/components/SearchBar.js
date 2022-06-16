@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TextField } from "@mui/material";
 
 const Search = styled.input`
     padding: 5px;
@@ -10,7 +11,7 @@ const Search = styled.input`
 
 function SearchBar() {
   return (
-      <Search placeholder="Type to search..."></Search>
+      <TextField label="Search" variant="outlined"></TextField>
   )
 }
 

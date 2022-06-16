@@ -7,7 +7,7 @@ const NavBar = styled.header`
   background-color: #334756;
   box-shadow: 0 3px 3px rgba(0,0,0,0.3);
   display: grid;
-  grid-template-columns: 10rem 1fr 5rem;
+  grid-template-columns: 10rem 1fr 6rem;
   grid-column-gap: 20px;
   position: fixed;
   padding: 10px;

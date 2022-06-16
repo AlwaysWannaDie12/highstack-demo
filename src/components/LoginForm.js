@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import {TextField, Button, Alert} from "@mui/material";
 
 /*
 
@@ -64,11 +65,11 @@ function LoginForm(props) {
         <LogInForm>
             <form>
                 LogIn
-                {(props.error!= "") ? (<div>Error</div>) : ""}
-                <input placeholder="Ldap" type="text" id="ldap" onChange={e => setDetails({...details, ldap: e.target.value})} value={details.ldap}></input>
-                <input placeholder="Password" type="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}></input>
-                <button onClick={submitHandler}>Log In</button>
-                <button onClick={props.action}>Cancel</button>
+                {(props.error!= "") ? (<Alert severity="error" >Bad Credentials</Alert>) : ""}
+                <TextField placeholder="Ldap" type="text" id="ldap" onChange={e => setDetails({...details, ldap: e.target.value})} value={details.ldap}></TextField>
+                <TextField placeholder="Password" type="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}></TextField>
+                <Button onClick={submitHandler}>Log In</Button>
+                <Button onClick={props.action}>Cancel</Button>
             </form>
             {props.children}
         </LogInForm>
